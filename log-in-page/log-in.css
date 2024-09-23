@@ -16,7 +16,21 @@ body {
     backdrop-filter: blur(50px);
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 1px 1px 20px 10px white;
+    animation: glow 2s infinite ease-in-out;
 }
+@keyframes glow{
+    0%{
+        box-shadow: 0 0 20px 10px white;
+    }
+    50%{
+        box-shadow: 0 0 40px 20px white;
+    }
+    100%{
+        box-shadow: 0 0 20px 10px white;
+    }
+
+}
+
 input {
     height: 40px;
     box-shadow: 10px 10px 10px;
